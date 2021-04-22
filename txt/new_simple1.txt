@@ -1,0 +1,12 @@
+1:SAMSUNG
+2:MI
+3:havit
+4:QCY
+5:awEI
+6:microlab
+7:REMAX
+8:JBL
+9:CREATIVE
+10:sounďcore
+11:D7
+12:Individual Collections
