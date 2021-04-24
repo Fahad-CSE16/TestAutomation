@@ -6,6 +6,12 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome(
     executable_path="D:\software\WOrk\driver\chromedriver_win32\chromedriver.exe")
 driver.get("https://evaly.com.bd/categories/speaker-2f615cf9a")
+
+img_ele=driver.find_element_by_xpath("/html/body/reach-portal[1]/div/div/div/section/div/button")
+img_ele.click()
+time.sleep(3)
+
+
 # wait = WebDriverWait(driver, 15)
 # time.sleep(15)
 # wait.until(EC.title_contains(ele5.text))

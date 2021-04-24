@@ -4,6 +4,13 @@ import time
 driver =webdriver.Chrome(executable_path="D:\software\WOrk\driver\chromedriver_win32\chromedriver.exe")
 driver.get("https://evaly.com.bd")
 
+
+img_ele=driver.find_element_by_xpath("/html/body/reach-portal[1]/div/div/div/section/div/button")
+img_ele.click()
+time.sleep(3)
+
+
+
 srch=driver.find_element_by_xpath("//*[@id='__next']/div/div[2]/div[1]/div/div[1]/div/div/input")
 srch.send_keys("Motor Bike\n")
 time.sleep(5)
@@ -83,3 +90,4 @@ for x in range(1,itms+1):
         break
     if x==itms:
         print("blue Not Found")
+driver.close()

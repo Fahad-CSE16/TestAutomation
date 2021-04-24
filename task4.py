@@ -13,6 +13,13 @@ from selenium.webdriver.support import expected_conditions as EC
 
 driver =webdriver.Chrome(executable_path="D:\software\WOrk\driver\chromedriver_win32\chromedriver.exe")
 driver.get("https://evaly.com.bd/career")
+
+
+img_ele=driver.find_element_by_xpath("/html/body/reach-portal[1]/div/div/div/section/div/button")
+img_ele.click()
+time.sleep(3)
+
+
 try:
     for x in range(1,12):
         ele=driver.find_element_by_xpath("//*[@id='__next']/div/div[3]/div/div[2]/div[1]/div[{}]".format(x))
